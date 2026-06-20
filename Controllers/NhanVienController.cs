@@ -4,11 +4,11 @@ using _2526_2221050858_BaiThi.Models;
 
 namespace _2526_2221050858_BaiThi.Controllers;
 
-public class PhongBanController : Controller
+public class NhanVienController : Controller
 {
-    private readonly ILogger<PhongBanController> _logger;
+    private readonly ILogger<NhanVienController> _logger;
 
-    public PhongBanController(ILogger<PhongBanController> logger)
+    public NhanVienController(ILogger<NhanVienController> logger)
     {
         _logger = logger;
     }
@@ -22,6 +22,7 @@ public class PhongBanController : Controller
     {
         return View();
     }
+
     public IActionResult Update()
     {
         return Update();
